@@ -1,15 +1,15 @@
-import Link from 'next/link';
-import React from 'react';
-import { Button } from '@/components/ui/button';
+import { LandingHero } from "@/components/LandingHero";
+import { LandingNavbar } from "@/components/LandingNavbar";
 
-const page = () => {
-    return (
-        <div>
-            <Link href="/sign-in">
-                <Button>Login</Button>
-            </Link>
-        </div>
-    );
-};
 
-export default page;
+const LandingPage = () => {
+  return ( 
+    <div className="h-full ">
+      <LandingNavbar />
+      <LandingHero />
+      {/* <LandingContent /> */}
+    </div>
+   );
+}
+ 
+export default LandingPage;
